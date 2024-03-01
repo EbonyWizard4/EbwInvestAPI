@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+    place-items: grid;
+    margin: 0rem;
+}
+
+.Banner{
+    width: auto;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Banner .Overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 30rem;
+    opacity: 0.8;
+}
+
+.Banner .Glass{
+    width: 100%;
+    max-width: 500px;
+    height: 250px;
+    padding: 20px;
+    border: 2px solid rebeccapurple;
+    border-radius: 5rem;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Banner .Glass .Texto{
+    color: #e7ebf0;
+    font-size: 20px;
+    padding: 5rem;
+}
+
+.Banner .Glass .Texto h1{
+    font-size: 34pt;
+    color: #e7ebf0;
+}
+
+.Banner .Glass .Texto p{
+    padding: 10px;
+}
