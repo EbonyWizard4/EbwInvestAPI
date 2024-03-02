@@ -16,6 +16,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../img/bg-header-1.jpg");
+    background-position: top;
+    background-size: cover;
 }
 
 .Banner .Overlay{
