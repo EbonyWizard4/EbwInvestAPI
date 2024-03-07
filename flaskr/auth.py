@@ -30,7 +30,7 @@ def register():
             else:
                 return redirect(url_for('auth.login'))
         flash(error)
-    return render_template('auth/register.html1')
+    return render_template('auth/register.html')
 
 @bp.route('/login', methods=('GET', 'POST'))
 def login():
@@ -51,7 +51,7 @@ def login():
         if error is None:
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('auth/login.html'))
+            return redirect(url_for('index'))
         flash(error)
     return render_template('auth/login.html')
 
